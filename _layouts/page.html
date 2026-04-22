@@ -1,0 +1,21 @@
+---
+layout: base
+---
+
+<article class="page mb6" role="article">
+  {% unless page.hide_title and page.hide_description %}
+  <header>
+    {% unless page.hide_title %}
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% endunless %}
+    {% unless page.hide_description %}
+    {% include components/message.html text=page.description hide=page.hide_description %}
+    {% endunless %}
+  </header>
+  {% endunless %}
+
+  {{ content }}
+</article>
+
+{% include components/dingbat.html %}
+{% include body/comments.html %}
