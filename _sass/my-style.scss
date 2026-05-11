@@ -86,6 +86,42 @@ html {
   margin-top: 0.15rem;
 }
 
+.about-icon {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+  opacity: 0.6;
+  position: relative;
+  top: -0.08em;
+}
+
+.about-projects {
+  margin-top: 1rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.2rem 1rem;
+    margin: 0.2rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li a {
+    font-size: 0.9rem;
+  }
+}
+
+.about-projects-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .education-stack,
 .experience-stack {
   display: grid;
