@@ -1,3 +1,9 @@
+@media screen and (min-width: 86em) {
+  .content {
+    max-width: 64rem;
+  }
+}
+
 .dl-table {
   a {
     @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
@@ -45,7 +51,7 @@ html {
 }
 
 .section-body {
-  max-width: 42rem;
+  max-width: none;
 }
 
 .section-body p {
@@ -55,7 +61,7 @@ html {
 .about-layout {
   display: grid;
   grid-template-columns: minmax(10rem, 12rem) minmax(0, 1fr);
-  gap: 1.5rem;
+  gap: 2.5rem;
   align-items: start;
 }
 
@@ -68,7 +74,7 @@ html {
 }
 
 .about-copy {
-  max-width: 36rem;
+  max-width: none;
 }
 
 .about-meta {
@@ -145,8 +151,8 @@ html {
 .education-row,
 .experience-row {
   display: grid;
-  grid-template-columns: minmax(9rem, 11rem) minmax(4rem, 4.75rem) minmax(0, 1fr);
-  gap: 0.75rem 0.6rem;
+  grid-template-columns: minmax(10rem, 12rem) minmax(4rem, 4.75rem) minmax(0, 1fr);
+  gap: 0.75rem 2.5rem;
   align-items: start;
 }
 
